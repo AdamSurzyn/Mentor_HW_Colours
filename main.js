@@ -58,10 +58,14 @@ function main() {
       e.preventDefault();
       let name = e.srcElement.value;
       let filteredColours = searchColours(name);
-      renderColours(filteredColours, htmlClass, colorUl);
+      if (name != "") {
+        renderColours(filteredColours, htmlClass, colorUl);
+      } else {
+        renderColours([], htmlClass, colorUl);
+      }
     }
   });
-  renderColours(coloursArr, htmlClass, colorUl);
+  //renderColours(coloursArr, htmlClass, colorUl);
 }
 
 const searchColours = (input) => {

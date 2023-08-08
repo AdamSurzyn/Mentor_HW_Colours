@@ -1,0 +1,25 @@
+.container {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.colour-search {
+  padding: 10px;
+  border: 0;
+  box-shadow: 0 0 15px 7px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+}
+
+.current-colours {
+  padding: 0px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.colour {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style-type: none;
+  padding: 3px 0px 3px 0px;
+}
